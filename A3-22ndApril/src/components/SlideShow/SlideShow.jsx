@@ -24,7 +24,8 @@ const SlideShow = () => {
                 <div className='icons'>
                 <SkipPreviousSharpIcon className='icon'  onClick={()=>updateSlide()}/>
                 {isPlaying?
-                    <PauseSharpIcon className='icon' fontSize='large' onClick={()=>setIsPlaying(false)}/>:
+                    <PauseSharpIcon className='icon' fontSize='large' onClick={()=>setIsPlaying(false)}/>
+                    :
                     <PlayArrowSharpIcon className='icon' fontSize='large' onClick={()=>setIsPlaying(true)}/>
                     }
                 

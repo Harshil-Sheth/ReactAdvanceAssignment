@@ -63,7 +63,9 @@ export default function DataTable() {
 
   return (
   <div>        
-  {loading?<div className={classes.root}><CircularProgress /></div>:
+  {loading?
+  <div className={classes.root}><CircularProgress /></div>
+  :
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
