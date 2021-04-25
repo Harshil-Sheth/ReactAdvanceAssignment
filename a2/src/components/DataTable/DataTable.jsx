@@ -9,6 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { useFetch } from '../../custom-hooks/useFetchWithReducer';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import Todoheader from './todoheader';
 
 
 
@@ -63,10 +64,12 @@ export default function DataTable() {
 
   return (
   <div>        
-  {loading?
+  
+    <TableContainer component={Paper}>
+    <Todoheader/>
+        {loading?
   <div className={classes.root}><CircularProgress /></div>
   :
-    <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -88,8 +91,8 @@ export default function DataTable() {
             </StyledTableRow>
           ))}
         </TableBody>
-      </Table>
-    </TableContainer>}
+      </Table>}
+    </TableContainer>
     </div>
   );
 }

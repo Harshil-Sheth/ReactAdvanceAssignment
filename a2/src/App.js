@@ -7,8 +7,8 @@ function App() {
     <Router>
     <div className="App">
       <Switch>
-      <Route exact path='/' component={Todolist} />
-      <Route exact path='/datatable' component={DataTable} />
+      <Route exact path='/' component={DataTable} />
+      <Route exact path='/todo' component={Todolist} />
       </Switch>
     </div>
     </Router>

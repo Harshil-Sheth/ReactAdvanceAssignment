@@ -1,0 +1,33 @@
+.headertext {
+  text-align: center !important;
+}
+
+.inputfield {
+  width: 340px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .inputfield {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .inputfield {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .inputfield {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .inputfield {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .inputfield {
+    width: 170px;
+  }
+}

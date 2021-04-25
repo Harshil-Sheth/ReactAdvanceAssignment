@@ -19,13 +19,13 @@ const Todoheader = () => {
 	const classes = useStyles();
     return (
         <div className={classes.root}>
-      <AppBar position="static" >
+      <AppBar position="static" style={{backgroundColor:'#000'}} >
         <Toolbar>
          
           <Typography variant="h6" className={classes.title}>
-            Todo
+            Datatable
           </Typography>
-          <Button variant='contained' onClick={()=>history.push("/")} >Go to Datatable</Button>
+          <Button variant="contained" onClick={()=>history.push("/todo")} >Go to Todo</Button>
         </Toolbar>
       </AppBar>
     </div>
